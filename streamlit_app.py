@@ -63,7 +63,7 @@ def upload_image():
             up_img=os.path.join('uploaded',uploaded_image.name)
             idx = recommendations(features,6,up_img,model)
            
-            
+            st.subheader("Similar Products")
             col1,col2,col3,col4,col5 = st.columns(5)
             
             with col1:
@@ -78,7 +78,7 @@ def upload_image():
                 st.image(file_name[idx[0][5]])
 
 def main():
-    st.title("Image Upload Demo")
+    st.title("Men & Women Fashion Recommendation")
     upload_image()
 
 if __name__ == "__main__":
