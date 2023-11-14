@@ -67,15 +67,15 @@ def upload_image():
             col1,col2,col3,col4,col5 = st.columns(5)
             
             with col1:
-                st.image(file_name[idx[0][1]].str.replace('\\\\','/'))
+                st.image(file_name[idx[0][1]])
             with col2:
-                st.image(file_name[idx[0][2]].str.replace('\\\\','/'))
+                st.image(file_name[idx[0][2]])
             with col3:
-                st.image(file_name[idx[0][3]].str.replace('\\\\','/'))
+                st.image(file_name[idx[0][3]])
             with col4:
-                st.image(file_name[idx[0][4]].str.replace('\\\\','/'))
+                st.image(file_name[idx[0][4]])
             with col5:
-                st.image(file_name[idx[0][5]].str.replace('\\\\','/'))
+                st.image(file_name[idx[0][5]])
 
 def main():
     st.title("Men & Women Fashion Recommendation")
